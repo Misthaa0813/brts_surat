@@ -157,6 +157,7 @@ The application provides distance-wise ticket fares and pass charges.
 
 # 📂 Project Structure
 
+```text
 brts_surat/
 │
 ├── android/
@@ -197,7 +198,6 @@ brts_surat/
 ├── pubspec.lock
 ├── .gitignore
 └── README.md
-
 ---  
 
 ## 🏗️ Project Architecture
@@ -223,6 +223,8 @@ brts_surat/
                     └──────────────────────┘
 
 ---
+
+```
 
 # 🎯 Future Improvements
 
