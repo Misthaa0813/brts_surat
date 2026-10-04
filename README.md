@@ -228,8 +228,8 @@ brts_surat/
 
 # 🎯 Future Improvements
 
-## The following features can be considered for future versions of BRTS Surat:
-
+### The following features can be considered for future versions of BRTS Surat:
+```
 📍 Live bus tracking
 🚌 Real-time bus arrival information
 🗺️ Interactive route navigation
@@ -240,6 +240,7 @@ brts_surat/
 🌙 Dark mode
 👤 User authentication
 📊 Travel history and analytics
+```
 
 ---
 
