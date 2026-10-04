@@ -1,50 +1,52 @@
-# 🚌 BRTSConnect Surat
+# 🚌 BRTS Surat
 
-A Flutter-based mobile application designed to make Surat BRTS travel easier by providing route planning, bus information, fare details, route maps, notifications, and digital ticket information in one place.
+A Flutter-based mobile application designed to make travelling through Surat BRTS easier by providing route planning, bus information, fare details, route maps, notifications, and ticket information in one place.
+
+---
 
 ## 📱 About the Project
 
-**BRTSConnect Surat** is a mobile application developed to improve the public transportation experience for passengers using the Surat Bus Rapid Transit System (BRTS).
+**BRTS Surat** is a mobile application developed to provide a simple and convenient way for passengers to access important Surat BRTS information.
 
-The application allows users to:
+The application brings commonly required BRTS services together in a single mobile interface, allowing users to plan their journey, explore bus routes, check fares, view the route map, and access ticket and notification information.
 
-- Plan a journey between two BRTS stops
-- Find available routes between source and destination
-- View bus details and stops
-- Check distance-wise ticket fares
-- View monthly, quarterly, half-yearly, and yearly pass charges
-- View the BRTS route map
-- Access ticket information
-- View important notifications
-- Use a simple and user-friendly mobile interface
-
-The application is built using **Flutter and Dart** with a REST API backend developed using **Node.js and Express.js**. MongoDB Atlas is used for database management, and the backend is deployed on Render.
+The frontend is developed using **Flutter and Dart**, while the backend is built using **Node.js and Express.js**. **MongoDB Atlas** is used for storing bus, route, and stop data, and the backend is deployed using **Render**.
 
 ---
 
 ## ✨ Features
 
 ### 🗺️ Plan Your Trip
-- Select source and destination BRTS stops
+
+- Select the source and destination BRTS stops
 - Search for available routes
-- Display route information
-- Fetch real-time data from the backend API
+- View route information
+- Fetch route and stop data through the backend API
 
 ### 🚌 Bus Details
-- Search/select a bus number
-- View associated route information
-- View stops covered by the bus
-- Display complete bus journey details
+
+- Select/search for a bus number
+- View the route associated with the bus
+- View the stops covered by the bus
+- Display complete bus journey information
 
 ### 🎫 My Tickets
+
 - View available ticket information
 - Display multiple tickets
 - Expand ticket cards to view passenger details
+- View passenger name and age information
+
+### 🔔 Notifications
+
+- Dedicated notifications screen
+- Display important BRTS-related information and updates
 
 ### 💰 Fare Chart
-Provides:
 
-**Distance-wise Ticket Fare**
+The application provides distance-wise ticket fares and pass charges.
+
+#### Distance-wise Ticket Fare
 
 | Distance | Fare |
 |----------|------|
@@ -54,28 +56,27 @@ Provides:
 | 6–10 km | ₹20 |
 | Over 10 km | ₹25 |
 
-**Pass Charges**
+#### Pass Charges
 
-| Duration | Student/Women | General |
-|----------|---------------|---------|
+| Duration | Student / Women | General |
+|----------|-----------------|---------|
 | 1 Month | ₹100 | ₹700 |
 | 3 Months | ₹300 | ₹1,900 |
 | 6 Months | ₹500 | ₹3,600 |
 | 1 Year | ₹1,000 | ₹7,000 |
 
 ### 🗺️ Route Map
-- Dedicated BRTS route map screen
-- Zoom and pan support
+
+- Dedicated BRTS route map
+- Zoom support
+- Pan support
 - High-quality route map display
 
-### 🔔 Notifications
-- Dedicated notification screen
-- Displays important BRTS-related information and updates
-
 ### 🎨 User Interface
-- Clean and simple Flutter UI
+
+- Clean and simple mobile interface
 - Easy navigation
-- Dedicated screens for each major feature
+- Dedicated screens for major features
 - Custom BRTS application icon
 
 ---
@@ -83,60 +84,54 @@ Provides:
 ## 🛠️ Tech Stack
 
 ### Frontend
-- Flutter
-- Dart
-- Material Design
+
+- **Flutter**
+- **Dart**
+- **Material Design**
 
 ### Backend
-- Node.js
-- Express.js
-- REST API
+
+- **Node.js**
+- **Express.js**
+- **REST API**
 
 ### Database
-- MongoDB Atlas
+
+- **MongoDB Atlas**
 
 ### Deployment
-- Render
+
+- **Render**
 
 ### Development Tools
-- Visual Studio Code
-- Git
-- GitHub
-- Xcode
-- Flutter CLI
+
+- **Visual Studio Code**
+- **Git**
+- **GitHub**
+- **Xcode**
+- **Flutter CLI**
 
 ---
 
 ## 🏗️ Project Architecture
 
 ```text
-BRTSConnect Surat
-│
-├── Flutter Mobile Application
-│   │
-│   ├── Screens
-│   │   ├── Home
-│   │   ├── Plan Your Trip
-│   │   ├── Bus Details
-│   │   ├── My Tickets
-│   │   ├── Notifications
-│   │   ├── Fare Chart
-│   │   └── Route Map
-│   │
-│   ├── Models
-│   │   ├── Bus
-│   │   ├── Bus Details
-│   │   ├── Route
-│   │   └── Stop
-│   │
-│   └── Services
-│       ├── Bus Service
-│       ├── Route Service
-│       └── Stop Service
-│
-└── Backend
-    │
-    ├── Node.js
-    ├── Express.js
-    ├── REST APIs
-    └── MongoDB Atlas
+                    ┌──────────────────────┐
+                    │      BRTS Surat      │
+                    │   Flutter Mobile App │
+                    └──────────┬───────────┘
+                               │
+                               │ HTTP Requests
+                               ▼
+                    ┌──────────────────────┐
+                    │   Node.js + Express  │
+                    │      REST API        │
+                    └──────────┬───────────┘
+                               │
+                               │ Database Queries
+                               ▼
+                    ┌──────────────────────┐
+                    │    MongoDB Atlas     │
+                    │ Bus / Route / Stop   │
+                    │       Data           │
+                    └──────────────────────┘
