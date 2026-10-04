@@ -135,6 +135,9 @@ The application provides distance-wise ticket fares and pass charges.
                     │ Bus / Route / Stop   │
                     │       Data           │
                     └──────────────────────┘
+
+---
+
 # User Application Flow
     User
       │
@@ -158,7 +161,7 @@ The application provides distance-wise ticket fares and pass charges.
       │
       ▼
     Information displayed to User
-    
+---    
 # Backend APIs
 
     GET /api/stops
@@ -167,7 +170,7 @@ The application provides distance-wise ticket fares and pass charges.
     GET /api/bus-details?bus_no=<bus_number>
     GET /api/route-stops
     GET /api/find-route?from=<stop_id>&to=<stop_id>
-
+---
 # Backend Repository
 
 ## BRTS Backend
@@ -215,7 +218,7 @@ The application provides distance-wise ticket fares and pass charges.
   ├── pubspec.lock
   ├── .gitignore
   └── README.md
-  
+---  
 
 # 🎯 Future Improvements
 
@@ -231,6 +234,8 @@ The application provides distance-wise ticket fares and pass charges.
 🌙 Dark mode
 👤 User authentication
 📊 Travel history and analytics
+
+---
 
 # 👩‍💻 Developer
 Sharmistha Hazra
