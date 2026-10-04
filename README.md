@@ -157,46 +157,47 @@ The application provides distance-wise ticket fares and pass charges.
 
 # 📂 Project Structure
 
-  brts_surat/
-  │
-  ├── android/
-  ├── ios/
-  │
-  ├── assets/
-  │   └── images/
-  │       ├── logo_image.jpg
-  │       └── route_image.jpg
-  │
-  ├── lib/
-  │   ├── main.dart
-  │   │
-  │   ├── models/
-  │   │   ├── bus.dart
-  │   │   ├── bus_details.dart
-  │   │   ├── route.dart
-  │   │   └── stop.dart
-  │   │
-  │   ├── screens/
-  │   │   ├── bus_details_screen.dart
-  │   │   ├── fare_chart_screen.dart
-  │   │   ├── my_tickets_screen.dart
-  │   │   ├── notifications_screen.dart
-  │   │   ├── plan_trip_screen.dart
-  │   │   └── route_map_screen.dart
-  │   │
-  │   └── services/
-  │       ├── bus_service.dart
-  │       ├── route_service.dart
-  │       └── stop_service.dart
-  │
-  ├── test/
-  │   └── widget_test.dart
-  │
-  ├── analysis_options.yaml
-  ├── pubspec.yaml
-  ├── pubspec.lock
-  ├── .gitignore
-  └── README.md
+brts_surat/
+│
+├── android/
+├── ios/
+│
+├── assets/
+│   └── images/
+│       ├── logo_image.jpg
+│       └── route_image.jpg
+│
+├── lib/
+│   ├── main.dart
+│   │
+│   ├── models/
+│   │   ├── bus.dart
+│   │   ├── bus_details.dart
+│   │   ├── route.dart
+│   │   └── stop.dart
+│   │
+│   ├── screens/
+│   │   ├── bus_details_screen.dart
+│   │   ├── fare_chart_screen.dart
+│   │   ├── my_tickets_screen.dart
+│   │   ├── notifications_screen.dart
+│   │   ├── plan_trip_screen.dart
+│   │   └── route_map_screen.dart
+│   │
+│   └── services/
+│       ├── bus_service.dart
+│       ├── route_service.dart
+│       └── stop_service.dart
+│
+├── test/
+│   └── widget_test.dart
+│
+├── analysis_options.yaml
+├── pubspec.yaml
+├── pubspec.lock
+├── .gitignore
+└── README.md
+
 ---  
 
 ## 🏗️ Project Architecture
